@@ -67,18 +67,6 @@ export const locations: Record<string, Location> = {
         note: 'A great-value Japanese chain with fresh ingredients and consistently satisfying sets. The salmon is especially worth ordering.',
       },
       {
-        id: 'chengdu-wanshijia',
-        name: 'Wanshijia Korean Kitchen',
-        rating: 4.6,
-        image: '/Taste-of-jiangan/chengdu-restaurants/wanshijia/korean-style-fried-cuttlefish.jpg',
-        images: [
-          '/Taste-of-jiangan/chengdu-restaurants/wanshijia/wanshijia-cover.jpg',
-          '/Taste-of-jiangan/chengdu-restaurants/wanshijia/korean-style-fried-cuttlefish.jpg',
-        ],
-        highlights: ['Avg. 38 RMB', 'Korean Cuisine', 'Crispy Fried Dishes'],
-        note: 'A very solid Korean-style spot, especially if you like fried dishes. The food is casual, satisfying, and easy to share.',
-      },
-      {
         id: 'chengdu-yuehuayin',
         name: 'Yuehuayin Wagyu Buffet',
         rating: 4.7,
