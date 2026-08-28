@@ -45,13 +45,8 @@ const itemText: Record<string, ItemText> = {
     highlights: ['人均 80 元', '日料连锁', '三文鱼新鲜'],
     note: '性价比不错的日料连锁，食材新鲜，套餐稳定，三文鱼尤其值得点。',
   },
-  'chengdu-wanshijia': {
-    name: '万食家韩式料理',
-    highlights: ['人均 38 元', '韩式料理', '炸物口感好'],
-    note: '很稳的韩式小店，尤其适合想吃炸物的时候。味道轻松、下饭，也适合和朋友一起分着吃。',
-  },
   'chengdu-yuehuayin': {
-    name: '悦华吟和牛自助',
+    name: '悦花隐和牛自助',
     highlights: ['人均 150 元', '和牛自助', '寿司、烤串和鳗鱼'],
     note: '适合想吃丰盛一点的时候，和牛、寿司、烤串、鹅肝寿司和鳗鱼都有，聚餐或庆祝比较合适。',
   },
@@ -66,7 +61,7 @@ const itemText: Record<string, ItemText> = {
     note: '海鲜煲味道温暖扎实，食材比较新鲜，想吃浓郁但不想吃火锅时很合适。',
   },
   'chengdu-dadalong-sushi-canteen': {
-    name: '大大龙寿司食堂',
+    name: 'dadalong',
     highlights: ['人均 70-90 元', '寿司与小食', '靠近 CY Park'],
     note: '靠近 CY Park 的寿司和小食店，周边适合散步，适合轻松吃一顿再逛一逛。',
   },
@@ -76,12 +71,12 @@ const itemText: Record<string, ItemText> = {
     note: '环境比较精致的泰式餐厅，口味鲜明，适合想吃得舒服一点的时候。',
   },
   'swg-fuyou-bistro': {
-    name: '福佑小馆',
+    name: '福友小馆',
     highlights: ['人均 45 元', '中式料理', '摆盘好看'],
     note: '一家有氛围感的中式餐厅，菜品呈现比较漂亮，价格也还算友好。',
   },
   'swg-mangesuo': {
-    name: '蛮格索',
+    name: '满格索',
     highlights: ['人均 40 元', '新疆风味', '椒麻鸡突出'],
     note: '新疆风味很有记忆点，椒麻鸡是招牌，味道鲜明，值得专门去试。',
   },
@@ -146,7 +141,7 @@ const itemText: Record<string, ItemText> = {
     note: '小西南门附近很好吃的韩式选择，拌饭和奶油火鸡面都很浓郁，比较容易推荐。',
   },
   'swg-15': {
-    name: '四蛋炒饭',
+    name: '蛋炒饭',
     highlights: ['人均 20 元', '蛋香明显', '简单管饱'],
     note: '很扎实的炒饭选择，蛋香足，不花哨但便宜、管饱，适合快速吃一餐。',
   },
@@ -166,17 +161,17 @@ const itemText: Record<string, ItemText> = {
     note: '二楼美食广场适合快速吃饭，泡面、韩式拌饭、拌粉和现煮粥粉面都有。韩式拌饭大约 12 元，蔬菜和鸡蛋都比较新鲜。',
   },
   'xiyuan-jiangyuan-restaurant': {
-    name: '江源餐厅',
+    name: '江缘餐厅',
     highlights: ['人均 15-30 元', '面食', '米线和冒菜'],
     note: '主打细面、米线和冒菜这类热乎简餐。味道不算特别惊艳，但方便、快，适合想吃饱的时候。',
   },
   'xiyuan-xinyuan-restaurant': {
-    name: '馨园餐厅',
+    name: '馨苑餐厅',
     highlights: ['人均 20-30 元', '点菜和自选菜', '适合多人吃'],
     note: '既有点菜也有自选菜，可能是西园食堂里味道比较好的一处。价格略高一些，但适合朋友一起吃。',
   },
   'xiyuan-chuanyun-canteen': {
-    name: '川云食堂',
+    name: '川韵食堂',
     highlights: ['人均 15-30 元', '韩式盖饭', '炒饭炒面'],
     note: '主打韩式盖饭、炒饭、面类和其他主食，适合日常吃，便宜管饱但不算特别出彩。',
   },
@@ -191,12 +186,12 @@ const itemText: Record<string, ItemText> = {
     note: '比较标准的烧鸭饭，味道和分量都还可以，是 SCUPI 附近较实用的外卖选择。',
   },
   'takeout-salmon-craft-studio': {
-    name: '福得嘎三文鱼工坊',
+    name: '海研所 三文鱼料理店',
     highlights: ['人均 50 元', '三文鱼新鲜', '包装精致'],
     note: '包装比较好看，三文鱼也新鲜。比普通校园餐贵一些，但想吃清爽一点时值得试。',
   },
   'takeout-peach-bond-manor': {
-    name: '桃园日料',
+    name: '桃缘居料理',
     highlights: ['人均 40 元', '日式料理', '鹅肝炒饭'],
     note: '鹅肝铁板炒饭香味足，吃起来满足，不过底部可能略咸、略油。',
   },
@@ -221,7 +216,7 @@ const itemText: Record<string, ItemText> = {
     note: '面包比食堂早餐更精致一点，简单、管饱，适合上课前买。',
   },
   'takeout-huanshi': {
-    name: '环食轻食',
+    name: '幻师轻食',
     highlights: ['人均 30 元', '轻食', '健康管饱'],
     note: '相对清爽健康的外卖选择，想吃得不那么油但又需要能量时很适合。',
   },
