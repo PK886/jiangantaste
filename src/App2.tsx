@@ -41,7 +41,9 @@ const FoodCard = ({ place, theme, onOpen }: any) => {
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  React.useEffect(() => window.scrollTo(0, 0), [pathname]);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
